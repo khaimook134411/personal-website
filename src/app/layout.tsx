@@ -16,6 +16,12 @@ export const metadata: Metadata = {
   title: "Khaimook | Personal Website",
   description: "Personal website and portfolio of Khaimook",
   keywords: ["portfolio", "personal website", "developer"],
+  icons: {
+    icon: [
+      { url: "/favicon-light.png", media: "(prefers-color-scheme: light)" },
+      { url: "/favicon-dark.png", media: "(prefers-color-scheme: dark)" },
+    ],
+  },
 };
 
 export default function RootLayout({
