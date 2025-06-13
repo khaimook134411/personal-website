@@ -1,102 +1,180 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex flex-col min-h-screen">
+      {/* Navigation */}
+      <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-sm border-b border-foreground/10 z-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between h-16 items-center">
+            <Link href="/" className="font-bold text-xl">
+              Khaimook
+            </Link>
+            <div className="hidden sm:flex space-x-8">
+              <Link
+                href="#about"
+                className="hover:text-foreground/80 transition-colors"
+              >
+                About
+              </Link>
+              <Link
+                href="#projects"
+                className="hover:text-foreground/80 transition-colors"
+              >
+                Projects
+              </Link>
+              <Link
+                href="#contact"
+                className="hover:text-foreground/80 transition-colors"
+              >
+                Contact
+              </Link>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+            Hi, I'm Khaimook 👋
+          </h1>
+          <p className="text-xl sm:text-2xl text-foreground/80 mb-8 max-w-2xl">
+            I'm a developer passionate about creating beautiful and functional
+            web experiences.
+          </p>
+          <div className="flex gap-4">
+            <Link
+              href="#contact"
+              className="bg-foreground text-background px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"
+            >
+              Get in touch
+            </Link>
+            <Link
+              href="#projects"
+              className="border border-foreground/20 px-6 py-3 rounded-lg hover:bg-foreground/5 transition-colors"
+            >
+              View my work
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section
+        id="about"
+        className="py-16 px-4 sm:px-6 lg:px-8 bg-foreground/[0.02]"
+      >
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8">About Me</h2>
+          <div className="prose prose-lg dark:prose-invert">
+            <p>
+              I'm a developer with a passion for building modern web
+              applications. I specialize in creating responsive, user-friendly
+              interfaces and implementing efficient solutions to complex
+              problems.
+            </p>
+            <p>
+              When I'm not coding, you can find me exploring new technologies,
+              contributing to open-source projects, or learning new skills.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8">Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Project cards will go here */}
+            <div className="border border-foreground/10 rounded-lg p-6 hover:border-foreground/20 transition-colors">
+              <h3 className="text-xl font-bold mb-2">Project 1</h3>
+              <p className="text-foreground/80 mb-4">
+                A brief description of the project and the technologies used.
+              </p>
+              <div className="flex gap-2">
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  Next.js
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  React
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  TypeScript
+                </span>
+              </div>
+            </div>
+            <div className="border border-foreground/10 rounded-lg p-6 hover:border-foreground/20 transition-colors">
+              <h3 className="text-xl font-bold mb-2">Project 2</h3>
+              <p className="text-foreground/80 mb-4">
+                Another project showcasing different skills and technologies.
+              </p>
+              <div className="flex gap-2">
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  Node.js
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  Express
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  MongoDB
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section
+        id="contact"
+        className="py-16 px-4 sm:px-6 lg:px-8 bg-foreground/[0.02]"
+      >
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <p className="text-lg mb-6">
+                I'm always open to new opportunities and collaborations. Feel
+                free to reach out if you'd like to work together or just say
+                hello!
+              </p>
+              <div className="space-y-4">
+                <a
+                  href="mailto:your.email@example.com"
+                  className="flex items-center gap-2 hover:text-foreground/80 transition-colors"
+                >
+                  <span className="font-mono">→</span> your.email@example.com
+                </a>
+                <a
+                  href="https://github.com/yourusername"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:text-foreground/80 transition-colors"
+                >
+                  <span className="font-mono">→</span> GitHub
+                </a>
+                <a
+                  href="https://linkedin.com/in/yourusername"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:text-foreground/80 transition-colors"
+                >
+                  <span className="font-mono">→</span> LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="mt-auto py-8 px-4 sm:px-6 lg:px-8 border-t border-foreground/10">
+        <div className="max-w-5xl mx-auto text-center text-sm text-foreground/60">
+          <p>© {new Date().getFullYear()} Khaimook. All rights reserved.</p>
+        </div>
       </footer>
     </div>
   );
