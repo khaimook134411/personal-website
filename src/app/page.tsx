@@ -38,11 +38,11 @@ export default function Home() {
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-            Hi, I'm Khaimook 👋
+            Hi, I&#39;m Khaimook 👋
           </h1>
           <p className="text-xl sm:text-2xl text-foreground/80 mb-8 max-w-2xl">
-            I'm a developer passionate about creating beautiful and functional
-            web experiences.
+            I&#39;m a developer passionate about creating beautiful and
+            functional web experiences.
           </p>
           <div className="flex gap-4">
             <Link
@@ -70,14 +70,15 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-8">About Me</h2>
           <div className="prose prose-lg dark:prose-invert">
             <p>
-              I'm a developer with a passion for building modern web
+              I&#39;m a developer with a passion for building modern web
               applications. I specialize in creating responsive, user-friendly
               interfaces and implementing efficient solutions to complex
               problems.
             </p>
             <p>
-              When I'm not coding, you can find me exploring new technologies,
-              contributing to open-source projects, or learning new skills.
+              When I&#39;m not coding, you can find me exploring new
+              technologies, contributing to open-source projects, or learning
+              new skills.
             </p>
           </div>
         </div>
@@ -137,9 +138,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <p className="text-lg mb-6">
-                I'm always open to new opportunities and collaborations. Feel
-                free to reach out if you'd like to work together or just say
-                hello!
+                I&#39;m always open to new opportunities and collaborations.
+                Feel free to reach out if you&#39;d like to work together or
+                just say hello!
               </p>
               <div className="space-y-4">
                 <a
