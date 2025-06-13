@@ -29,6 +29,13 @@ export default function Home() {
               >
                 Contact
               </Link>
+              <Link
+                href="https://www.canva.com/design/DAGqRl4azcI/J6ztt03Lz45E4DVmtrX2zg/edit?utm_content=DAGqRl4azcI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                target="_blank"
+                className="hover:text-foreground/80 transition-colors"
+              >
+                Resume
+              </Link>
             </div>
           </div>
         </div>
@@ -38,7 +45,7 @@ export default function Home() {
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-            Hi, I&#39;m Khaimook 👋
+            Hi, I&#39;m Khaimook
           </h1>
           <p className="text-xl sm:text-2xl text-foreground/80 mb-8 max-w-2xl">
             I&#39;m a developer passionate about creating beautiful and
@@ -87,7 +94,7 @@ export default function Home() {
       {/* Projects Section */}
       <section id="projects" className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">Projects</h2>
+          <h2 className="text-3xl font-bold mb-8">Life Cycle App</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Project cards will go here */}
             <div className="border border-foreground/10 rounded-lg p-6 hover:border-foreground/20 transition-colors">
@@ -144,13 +151,14 @@ export default function Home() {
               </p>
               <div className="space-y-4">
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:twutthikunprapan@gmail.com"
                   className="flex items-center gap-2 hover:text-foreground/80 transition-colors"
                 >
-                  <span className="font-mono">→</span> your.email@example.com
+                  <span className="font-mono">→</span>{" "}
+                  twutthikunprapan@gmail.com
                 </a>
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/khaimook134411"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-foreground/80 transition-colors"
@@ -158,7 +166,7 @@ export default function Home() {
                   <span className="font-mono">→</span> GitHub
                 </a>
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="www.linkedin.com/in/thanaphorn-wutthikunprapan-b7547a223"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-foreground/80 transition-colors"
