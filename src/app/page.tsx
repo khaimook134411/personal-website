@@ -1,14 +1,21 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div id="magic-background" className="flex flex-col min-h-screen">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-sm border-b border-foreground/10 z-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             <Link href="/" className="font-bold text-xl">
-              Khaimook
+              <Image
+                src="/km-logo.png"
+                alt="logo"
+                width={70}
+                height={30}
+                className="inline-block mr-2"
+              />
             </Link>
             <div className="hidden sm:flex space-x-8">
               <Link
@@ -42,28 +49,44 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-            Hi, I&#39;m Khaimook
-          </h1>
-          <p className="text-xl sm:text-2xl text-foreground/80 mb-8 max-w-2xl">
-            I&#39;m a developer passionate about creating beautiful and
-            functional web experiences.
-          </p>
-          <div className="flex gap-4">
-            <Link
-              href="#contact"
-              className="bg-foreground text-background px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"
-            >
-              Get in touch
-            </Link>
-            <Link
-              href="#projects"
-              className="border border-foreground/20 px-6 py-3 rounded-lg hover:bg-foreground/5 transition-colors"
-            >
-              View my work
-            </Link>
+      <section className="pb-16">
+        <div className="min-h-screen flex items-center justify-center bg-black text-white relative overflow-hidden">
+          <div className="absolute inset-0 z-0">
+            <div className="absolute left-1/6 lg:left-1/3 top-1/4 w-[500px] h-[400px] bg-cyan-700 blur-[200px] rounded-full animate-spin"></div>
+            <div className="absolute left-1/8 lg:left-1/4 top-1/2 w-[500px] h-[400px] bg-cyan-900 blur-[200px]  rounded-full hover:animate-pulse"></div>
+            <div className="absolute right-1/4 lg-right-1/2 top-1/2 w-[400px] h-[300px] bg-indigo-500 blur-[200px] rounded-full animate-pulse"></div>
+            <div className="absolute right-1/6 lg:right-1/3 top-1/4 w-[350px] h-[250px] bg-purple-500 blur-[200px] rounded-full hover:animate-spin"></div>
+          </div>
+
+          <div className="z-10 max-w-4xl flex flex-col gap-2 items-center">
+            <Image src="/hat.png" alt="hat" width={150} height={300} />
+            <div className="text-center">
+              <h6 className="text-sm uppercase tracking-widest text-gray-400 mb-2">
+                Hi! Muggles.
+              </h6>
+              <h5 className="text-5xl font-bold leading-tight">
+                <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">
+                  With code as my wand,
+                </span>
+                <br />
+                <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">
+                  I create the extraordinary.
+                </span>
+              </h5>
+              <p className="mt-6 text-gray-400 text-lg">
+                I&#39;m not just a developer — I&#39;m a spellcaster of logic,
+                crafting digital enchantments from lines of code and turning
+                imagination into interactive reality.
+              </p>
+              <div className="mt-8 flex justify-center gap-4">
+                <Link
+                  href="#about"
+                  className="px-6 py-3 bg-white text-black font-semibold rounded-full hover:bg-amber-100"
+                >
+                  Magic begins
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -71,7 +94,7 @@ export default function Home() {
       {/* About Section */}
       <section
         id="about"
-        className="py-16 px-4 sm:px-6 lg:px-8 bg-foreground/[0.02]"
+        className="py-16 px-4 sm:px-6 lg:px-8 bg-foreground/[0.02] mt-4"
       >
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-8">About Me</h2>
