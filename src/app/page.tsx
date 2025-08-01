@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div id="magic-background" className="flex flex-col min-h-screen">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-sm border-b border-foreground/10 z-50">
+      <nav className="fixed top-0 w-full bg-background/10  z-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             <Link href="/" className="font-bold text-xl">
@@ -22,13 +22,13 @@ export default function Home() {
                 href="#about"
                 className="hover:text-foreground/80 transition-colors"
               >
-                About
+                About Me
               </Link>
               <Link
-                href="#projects"
+                href="#expreriences"
                 className="hover:text-foreground/80 transition-colors"
               >
-                Projects
+                Expreriences
               </Link>
               <Link
                 href="#contact"
@@ -49,7 +49,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pb-16">
+      <section className="">
         <div className="min-h-screen flex items-center justify-center bg-black text-white relative overflow-hidden">
           <div className="absolute inset-0 z-0">
             <div className="absolute left-1/6 lg:left-1/3 top-1/4 w-[500px] h-[400px] bg-cyan-700 blur-[200px] rounded-full animate-spin"></div>
@@ -64,7 +64,7 @@ export default function Home() {
               <h6 className="text-sm uppercase tracking-widest text-gray-400 mb-2">
                 Hi! Muggles.
               </h6>
-              <h5 className="text-5xl font-bold leading-tight">
+              <h5 className="text-3xl lg:text-5xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">
                   With code as my wand,
                 </span>
@@ -94,34 +94,92 @@ export default function Home() {
       {/* About Section */}
       <section
         id="about"
-        className="py-16 px-4 sm:px-6 lg:px-8 bg-foreground/[0.02] mt-4"
+        className="pt-16 px-4 sm:px-6 lg:px-8 bg-foreground/[0.02]"
       >
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">About Me</h2>
           <div className="prose prose-lg dark:prose-invert">
-            <p>
-              I&#39;m a developer with a passion for building modern web
-              applications. I specialize in creating responsive, user-friendly
-              interfaces and implementing efficient solutions to complex
-              problems.
+            <p className="text-xl lg:text-3xl font-semibold text-center mb-5 lg:mb-10">
+              Thanaphorn Wutthikunprapan
             </p>
-            <p>
-              When I&#39;m not coding, you can find me exploring new
-              technologies, contributing to open-source projects, or learning
-              new skills.
+            {/* <p className="text-gray-400 text-lg text-center">
+              I&#39;m was born 1 November 2000 in Pitsanulok now im 24 years old
+              i really like everthing with blue color i think imbivert
+            </p> */}
+            <p className="text-gray-400 text-lg text-center">
+              Hello! I&#39;m Khaimook, born on November 1, 2000, in Phitsanulok,
+              Thailand. I&#39;m 24 years old. My favorite color is blue — it
+              feels calm, deep, and limitless, like the ocean. I consider myself
+              an ambivert: I enjoy peaceful solo moments but also love
+              connecting with others when the vibe is right. I enjoy learning
+              new things, solving problems, and turning ideas into real
+              projects.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects" className="py-16 px-4 sm:px-6 lg:px-8">
+      {/* Education Section */}
+      <section
+        id="education"
+        className="pt-16 px-4 sm:px-6 lg:px-8 bg-foreground/[0.02]"
+      >
+        <p className="text-xl lg:text-3xl font-semibold text-center">
+          Education
+        </p>
+        <div className="flex flex-col lg:flex-row gap-4 items-center lg:items-start justify-center mt-10">
+          <Image
+            src="/flag.png"
+            alt="flag"
+            width={180}
+            height={30}
+            className="inline-block mr-2 w-30 lg:w-45 animate-[wave_2s_ease-in-out_infinite]"
+          />
+
+          <div className="w-full lg:w-[550px] flex flex-col gap-4">
+            {/* <p className="text-xl font-semibold">Education</p> */}
+            <div className="">
+              <p className="text-[#d3901d] text-xl font-semibold">
+                King Mongkut&#39;s Institute of Technology Ladkrabang
+              </p>
+              <div className="ml-2">
+                <p className="">Bachelor of Computer Engineering</p>
+                <p className="">GPA: 3.52 (First Class Honors)</p>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                Cloud Architecture
+              </span>
+              <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                Database System
+              </span>
+              <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                Data Structure and Algorithm
+              </span>
+              <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                Operating System
+              </span>
+              <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                Software Development Life Cycle
+              </span>
+              <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                Web Technologies
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Expreriences Section */}
+      <section id="expreriences" className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">Life Cycle App</h2>
+          {/* <h2 className="text-3xl font-bold mb-8">Projects</h2> */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Project cards will go here */}
             <div className="border border-foreground/10 rounded-lg p-6 hover:border-foreground/20 transition-colors">
-              <h3 className="text-xl font-bold mb-2">Project 1</h3>
+              <h3 className="text-xl font-bold mb-2">
+                Dicast: Website Builder
+              </h3>
               <p className="text-foreground/80 mb-4">
                 A brief description of the project and the technologies used.
               </p>
@@ -138,7 +196,24 @@ export default function Home() {
               </div>
             </div>
             <div className="border border-foreground/10 rounded-lg p-6 hover:border-foreground/20 transition-colors">
-              <h3 className="text-xl font-bold mb-2">Project 2</h3>
+              <h3 className="text-xl font-bold mb-2">Life Cycle Application</h3>
+              <p className="text-foreground/80 mb-4">
+                A brief description of the project and the technologies used.
+              </p>
+              <div className="flex gap-2">
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  Next.js
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  React
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  TypeScript
+                </span>
+              </div>
+            </div>
+            <div className="border border-foreground/10 rounded-lg p-6 hover:border-foreground/20 transition-colors">
+              <h3 className="text-xl font-bold mb-2">Khai Mock</h3>
               <p className="text-foreground/80 mb-4">
                 Another project showcasing different skills and technologies.
               </p>
@@ -196,6 +271,7 @@ export default function Home() {
                 >
                   <span className="font-mono">→</span> LinkedIn
                 </a>
+                <span className="font-mono">→</span> +66 81 887 9752
               </div>
             </div>
           </div>
