@@ -49,7 +49,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="">
+      <section>
         <div className="min-h-screen flex items-center justify-center bg-black text-white relative overflow-hidden">
           <div className="absolute inset-0 z-0">
             <div className="absolute left-1/6 lg:left-1/3 top-1/4 w-[500px] h-[400px] bg-cyan-700 blur-[200px] rounded-full animate-spin"></div>
@@ -92,10 +92,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section
-        id="about"
-        className="pt-20 px-4 sm:px-6 lg:px-8 bg-foreground/[0.02]"
-      >
+      <section id="about" className="p-10 mt-10 lg:pt-20 bg-foreground/[0.02]">
         <div className="max-w-5xl mx-auto">
           <div className="prose prose-lg dark:prose-invert">
             <p className="text-xl lg:text-3xl font-semibold text-center mb-5 lg:mb-10">
@@ -119,10 +116,7 @@ export default function Home() {
       </section>
 
       {/* Education Section */}
-      <section
-        id="education"
-        className="pt-10 px-20 sm:px-6 lg:px-8 bg-foreground/[0.02] w-full"
-      >
+      <section id="education" className="p-10 bg-foreground/[0.02] w-full">
         {/* <p className="text-xl lg:text-3xl font-semibold text-center">
           Education
         </p> */}
@@ -171,7 +165,7 @@ export default function Home() {
       </section>
 
       {/* Expreriences Section */}
-      <section id="expreriences" className="py-20 px-4 sm:px-6 lg:px-8">
+      <section id="expreriences" className="p-10">
         <div className="max-w-5xl mx-auto">
           <p className="text-xl lg:text-3xl font-semibold mb-5 lg:mb-10">
             Expreriences
@@ -305,10 +299,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section
-        id="contact"
-        className="py-16 px-4 sm:px-6 lg:px-8 bg-foreground/[0.02]"
-      >
+      <section id="contact" className="p-10 bg-foreground/[0.02]">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
