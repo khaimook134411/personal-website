@@ -94,7 +94,7 @@ export default function Home() {
       {/* About Section */}
       <section
         id="about"
-        className="pt-16 px-4 sm:px-6 lg:px-8 bg-foreground/[0.02]"
+        className="pt-20 px-4 sm:px-6 lg:px-8 bg-foreground/[0.02]"
       >
         <div className="max-w-5xl mx-auto">
           <div className="prose prose-lg dark:prose-invert">
@@ -121,12 +121,12 @@ export default function Home() {
       {/* Education Section */}
       <section
         id="education"
-        className="pt-16 px-4 sm:px-6 lg:px-8 bg-foreground/[0.02]"
+        className="pt-10 px-20 sm:px-6 lg:px-8 bg-foreground/[0.02] w-full"
       >
-        <p className="text-xl lg:text-3xl font-semibold text-center">
+        {/* <p className="text-xl lg:text-3xl font-semibold text-center">
           Education
-        </p>
-        <div className="flex flex-col lg:flex-row gap-4 items-center lg:items-start justify-center mt-10">
+        </p> */}
+        <div className="max-w-5xl mx-auto w-full flex flex-col lg:flex-row gap-4 items-center lg:items-start justify-center mt-10">
           <Image
             src="/flag.png"
             alt="flag"
@@ -135,7 +135,7 @@ export default function Home() {
             className="inline-block mr-2 w-30 lg:w-45 animate-[wave_2s_ease-in-out_infinite]"
           />
 
-          <div className="w-full lg:w-[550px] flex flex-col gap-4">
+          <div className="w-full lg:w-[600px] flex flex-col gap-4">
             {/* <p className="text-xl font-semibold">Education</p> */}
             <div className="">
               <p className="text-[#d3901d] text-xl font-semibold">
@@ -171,61 +171,132 @@ export default function Home() {
       </section>
 
       {/* Expreriences Section */}
-      <section id="expreriences" className="py-16 px-4 sm:px-6 lg:px-8">
+      <section id="expreriences" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
-          {/* <h2 className="text-3xl font-bold mb-8">Projects</h2> */}
+          <p className="text-xl lg:text-3xl font-semibold mb-5 lg:mb-10">
+            Expreriences
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Project cards will go here */}
             <div className="border border-foreground/10 rounded-lg p-6 hover:border-foreground/20 transition-colors">
+              <h3 className="text-xl font-bold mb-2">DICAST: QuickPage</h3>
+              <p className="text-foreground/80 mb-4">
+                QuickPage, is a no-code web builder that combines Figma’s
+                intuitive design experience with the seamless web publishing
+                capabilities of Wix, Webflow, and Framer.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  CouchDB
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  Docker
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  Figma
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  GraphQL
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  Git
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  Jest
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  Kubernetes
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  NodeJS
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  Protobuf
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  Playwright
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  Sveltkit
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  Tailwind
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  TypeScript
+                </span>
+              </div>
+            </div>
+            <div className="border border-foreground/10 rounded-lg p-6 hover:border-foreground/20 transition-colors">
+              <h3 className="text-xl font-bold mb-2">SCB TECH X: Khai Mock</h3>
+              <p className="text-foreground/80 mb-4">
+                The web mock API helper has the ability to mock data and manage
+                responses systematically.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  Docker
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  Git
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  MUI
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  MySQL
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  NestJS
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  NodeJS
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  React
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  TypeScript
+                </span>
+              </div>
+            </div>
+            <div className="border border-foreground/10 rounded-lg p-6 hover:border-foreground/20 transition-colors">
               <h3 className="text-xl font-bold mb-2">
-                Dicast: Website Builder
+                KMITL: Life Cycle Application
               </h3>
               <p className="text-foreground/80 mb-4">
-                A brief description of the project and the technologies used.
+                Wellness application that helps users manage food intake and
+                track sleep, enabling goal setting for calorie consumption and
+                analyzing sleep patterns to identify factors affecting sleep
+                quality.
               </p>
-              <div className="flex gap-2">
+              <div className="flex flex-wrap gap-2">
                 <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
-                  Next.js
+                  ChartJS
                 </span>
                 <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
-                  React
+                  Firebase
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  Jest
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  NextJS
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  NodeJS
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  Playwright
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  Strapi
+                </span>
+                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
+                  Tailwind
                 </span>
                 <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
                   TypeScript
-                </span>
-              </div>
-            </div>
-            <div className="border border-foreground/10 rounded-lg p-6 hover:border-foreground/20 transition-colors">
-              <h3 className="text-xl font-bold mb-2">Life Cycle Application</h3>
-              <p className="text-foreground/80 mb-4">
-                A brief description of the project and the technologies used.
-              </p>
-              <div className="flex gap-2">
-                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
-                  Next.js
-                </span>
-                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
-                  React
-                </span>
-                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
-                  TypeScript
-                </span>
-              </div>
-            </div>
-            <div className="border border-foreground/10 rounded-lg p-6 hover:border-foreground/20 transition-colors">
-              <h3 className="text-xl font-bold mb-2">Khai Mock</h3>
-              <p className="text-foreground/80 mb-4">
-                Another project showcasing different skills and technologies.
-              </p>
-              <div className="flex gap-2">
-                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
-                  Node.js
-                </span>
-                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
-                  Express
-                </span>
-                <span className="px-2 py-1 bg-foreground/5 rounded text-sm">
-                  MongoDB
                 </span>
               </div>
             </div>
