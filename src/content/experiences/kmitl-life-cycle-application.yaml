@@ -1,0 +1,13 @@
+title: "KMITL: Life Cycle Application"
+description: "Wellness application that helps users manage food intake and track sleep, enabling goal setting for calorie consumption and analyzing sleep patterns to identify factors affecting sleep quality."
+tags:
+  - ChartJS
+  - Firebase
+  - Jest
+  - NextJS
+  - NodeJS
+  - Playwright
+  - Strapi
+  - Tailwind
+  - TypeScript
+order: 3
